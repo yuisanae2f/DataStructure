@@ -6,9 +6,10 @@ def files(r, _ext):
 
     for root, _, files in os.walk(r):
         for file in files:
-            if _ext == 'o' and file.endswith('.o'):
-                print("found: " + os.path.join(root, file))
-                rtn.append(os.path.join(root, file))
+            if _ext == 'o':
+                if file.endswith('.o'):
+                    print("found: " + os.path.join(root, file))
+                    rtn.append(os.path.join(root, file))
             else:
                 path, ext = os.path.splitext(os.path.join(root, file))
                 if ext in s.ext[_ext]:
