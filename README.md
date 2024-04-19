@@ -17,7 +17,7 @@
 ## Ancient
 > has the functions written with C in order to implement.  
 > its generic defines the method for it to work.  
-> it would have been defined similar to this.
+> it would have been defined similar to the following code.
 ```cpp
 template<>
 class _WhateverAncient<Whatever::Plain>;
@@ -25,7 +25,7 @@ class _WhateverAncient<Whatever::Plain>;
 
 ## Ordered
 > With class you could choose its data type you'd store and method to work.  
-> it would have been defined similar to this.
+> it would have been defined similar to the following code.
 ```cpp
 template<>
 class WhateverOrdered<dataType, Whatever::Plain>;
